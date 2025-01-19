@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hw15</title>
+  <style>
+    
+      
+
+    .holder {
+      display: flex;
+      flex-direction: column;
+      width: 700px;
+      height: 400px;
+      border: 2px solid black;
+    }
+
+    .row {
+      display: flex;
+      flex: 1; 
+    }
+
+    .item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-grow: 1;
+      /* flex-shrink: 1;  */
+    }
+
+    
+    .row:first-child .item:first-child { background-color: red; flex-grow: 2; } 
+    .row:first-child .item:last-child { background-color: yellow; flex-grow: 2; }  
+    .row:last-child .item:nth-child(1) { background-color: purple; }              
+    .row:last-child .item:nth-child(2) { background-color: blue; }               
+    .row:last-child .item:nth-child(3) { background-color: green; }               
+  </style>
+</head>
+<body>
+  <div class="holder">
+    <div class="row">
+      <div class="item">1</div>
+      <div class="item">5</div>
+    </div>
+    <div class="row">
+      <div class="item">3</div>
+      <div class="item">2</div>
+      <div class="item">4</div>
+    </div>
+  </div>
+</body>
+</html>
+
