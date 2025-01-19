@@ -13,7 +13,9 @@
       flex-direction: column;
       width: 700px;
       height: 400px;
-      border: 2px solid black;
+      border: 5px solid black;
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
     }
 
     .row {
@@ -30,8 +32,8 @@
     }
 
     
-    .row:first-child .item:first-child { background-color: red; flex-grow: 2; } 
-    .row:first-child .item:last-child { background-color: yellow; flex-grow: 2; }  
+    .row:first-child .item:first-child { background-color: red; flex-grow: 2; border-top-left-radius: 30px; } 
+    .row:first-child .item:last-child { background-color: yellow; flex-grow: 2; border-top-right-radius: 30px; }  
     .row:last-child .item:nth-child(1) { background-color: purple; }              
     .row:last-child .item:nth-child(2) { background-color: blue; }               
     .row:last-child .item:nth-child(3) { background-color: green; }               
